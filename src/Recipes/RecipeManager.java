@@ -3,13 +3,17 @@ package Recipes;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class RecipeLoader {
+public class RecipeManager {
 
 	
 	public static ArrayList<Recipe> loadRecipesFromDirectory(String directory) {
 		// TODO: Must be replaced with actual recipe data.
 		// Read recipe data in some format from directory.
 		return getFakeRecipeData();
+	}
+	
+	public void writeRecipesToDirectory(Recipe recipe, String directory) {
+		//Do something here to write the recipes.
 	}
 	
 	// Returns a list of randomly generated fake recipes.
