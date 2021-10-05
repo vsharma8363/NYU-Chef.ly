@@ -7,16 +7,16 @@ public class Recipe {
 	private String recipeName;
 	private String recipeImageURI;
 	private String recipeDescription;
-	private TreeMap<Integer, RecipeStep> steps;
+	private TreeMap<Integer, String> steps;
 	
 	public Recipe(String recipeName, String recipeImageURI, String recipeDescription) {
 		this.recipeName = recipeName;
 		this.recipeImageURI = recipeImageURI;
 		this.recipeDescription = recipeDescription;
-		this.steps = new TreeMap<Integer, RecipeStep>();
+		this.steps = new TreeMap<Integer, String>();
 	}
 	
-	public void addRecipeStep(int stepNumber, RecipeStep step) {
+	public void addRecipeStep(int stepNumber, String step) {
 		this.steps.put(stepNumber, step);
 	}
 	
@@ -32,7 +32,7 @@ public class Recipe {
 		return this.recipeDescription;
 	}
 	
-	public TreeMap<Integer, RecipeStep> getRecipeSteps() {
+	public TreeMap<Integer, String> getRecipeSteps() {
 		return this.steps;
 	}
 	
