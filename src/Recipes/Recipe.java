@@ -1,5 +1,6 @@
 package Recipes;
 
+import java.util.ArrayList;
 import java.util.TreeMap;
 
 public class Recipe {
@@ -7,45 +8,66 @@ public class Recipe {
 	private String recipeName;
 	private String recipeImageURI;
 	private String recipeDescription;
+	private String recipeDifficulty;
+	private String recipeAuthor;
+	private ArrayList<String> ingredients;
 	private TreeMap<Integer, String> steps;
 	
-	public Recipe(String recipeName, String recipeImageURI, String recipeDescription) {
+	public Recipe(String recipeName, String recipeDesc, String recipeDifficulty, String recipeAuthor, String recipeImage) {
 		this.recipeName = recipeName;
-		this.recipeImageURI = recipeImageURI;
-		this.recipeDescription = recipeDescription;
+		this.recipeImageURI = recipeImage;
+		this.recipeDescription = recipeDesc;
+		this.recipeDifficulty = recipeDifficulty;
+		this.recipeAuthor = recipeAuthor;
+		this.ingredients = new ArrayList<String>();
 		this.steps = new TreeMap<Integer, String>();
 	}
-	
-	public void addRecipeStep(int stepNumber, String step) {
+
+	public void addStep(int stepNumber, String step) {
 		this.steps.put(stepNumber, step);
 	}
 	
-	public String getRecipeName() {
+	public void addIngredient(String ingredient) {
+		this.ingredients.add(ingredient);
+	}
+	
+	public String getName() {
 		return this.recipeName;
 	}
 	
-	public String getRecipeImageURI() {
+	public String getAuthor() {
+		return this.recipeAuthor;
+	}
+	
+	public String getDifficulty() {
+		return this.recipeDifficulty;
+	}
+	
+	public String getImageURI() {
 		return this.recipeImageURI;
 	}
 	
-	public String getRecipeDescription() {
+	public String getDescription() {
 		return this.recipeDescription;
 	}
 	
-	public TreeMap<Integer, String> getRecipeSteps() {
+	public ArrayList<String> getIngredients() {
+		return this.ingredients;
+	}
+	
+	public String toString() {
+		String output = ("\nName:\n" + this.recipeName + "\n");
+		output += ("Description:\n" + this.recipeDescription + "\n");
+		output += ("Recipe Image:\n" + this.recipeImageURI + "\n");
+		for(int i = 0; i < this.steps.size(); i++) {
+			output += ("Step " + (i + 1) + "\n");
+			output += (this.steps.get(i+1) + "\n");
+		}
+		return output;
+	}
+	
+	public TreeMap<Integer, String> getSteps() {
 		return this.steps;
 	}
-	
-	public void printAll() {
-		System.out.println("\nName:\n" + this.recipeName);
-		System.out.println("Description:\n" + this.recipeDescription);
-		System.out.println("Recipe Image:\n" + this.recipeImageURI);
-		for(int i = 0; i < this.steps.size(); i++) {
-			System.out.println("Step " + (i + 1));
-			System.out.println(this.steps.get(i+1));
-		}
-	}
-	
-
 }
 
