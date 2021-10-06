@@ -48,20 +48,36 @@ public class RecipeManager {
 	        document.appendChild(root);
 	        // Add recipe name to XML file.
 	        Element recipeName = document.createElement("name");
-	        recipeName.appendChild(document.createTextNode(recipe.getRecipeName()));
+	        recipeName.appendChild(document.createTextNode(recipe.getName()));
             root.appendChild(recipeName);
             // Add recipe description to XML file.
 	        Element recipeDesc = document.createElement("description");
-	        recipeDesc.appendChild(document.createTextNode(recipe.getRecipeDescription()));
+	        recipeDesc.appendChild(document.createTextNode(recipe.getDescription()));
             root.appendChild(recipeDesc);
-            // Add recipe URI or filepath to XML file.
+            // Add recipe author to XML file.
+	        Element recipeAuthor = document.createElement("author");
+	        recipeAuthor.appendChild(document.createTextNode(recipe.getAuthor()));
+            root.appendChild(recipeAuthor);
+            // Add recipe difficulty to XML file.
+	        Element recipeDifficulty = document.createElement("difficulty");
+	        recipeDifficulty.appendChild(document.createTextNode(recipe.getDifficulty()));
+            root.appendChild(recipeDifficulty);
+            // Add recipe URI or file path to XML file.
 	        Element recipeImageURI = document.createElement("image_filepath");
-	        recipeImageURI.appendChild(document.createTextNode(recipe.getRecipeImageURI()));
+	        recipeImageURI.appendChild(document.createTextNode(recipe.getImageURI()));
             root.appendChild(recipeImageURI);
+            // Add all recipe ingredients to XML file.
+            Element recipeIngredients = document.createElement("ingredients");
+            root.appendChild(recipeIngredients);
+            for(String ingredient:recipe.getIngredients()) {
+            	Element recipeIngredient = document.createElement("ingredient");
+            	recipeIngredient.appendChild(document.createTextNode(ingredient));
+            	recipeIngredients.appendChild(recipeIngredient);
+            }
             // Add all recipe steps to XML file.
             Element recipeSteps = document.createElement("steps");
             root.appendChild(recipeSteps);
-            for(String instruction:recipe.getRecipeSteps().values()) {
+            for(String instruction:recipe.getSteps().values()) {
             	Element recipeStep = document.createElement("step");
             	recipeStep.appendChild(document.createTextNode(instruction));
             	recipeSteps.appendChild(recipeStep);
@@ -89,10 +105,17 @@ public class RecipeManager {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		refreshRecipeList();
+		this.refreshRecipeList();
 	}
 	
-	//TODO: public Recipe getRecipeBySearch(String searchKey) {}
+	public ArrayList<Recipe> getRecipeBySearch(String query) {
+		ArrayList<Recipe> output = new ArrayList<Recipe>();
+		for(Recipe recipe:this.recipeList) {
+			// TODO: Implement some comparison here
+			// compare query and recipe.getRecipeName(); --> add to output
+		}
+		return output;
+	}
 	
 	private void refreshRecipeList() {
 		this.recipeList.clear();
@@ -115,10 +138,16 @@ public class RecipeManager {
 				String recipeName = element.getElementsByTagName("name").item(0).getTextContent();
 				String recipeDesc = element.getElementsByTagName("description").item(0).getTextContent();
 				String recipeImage = element.getElementsByTagName("image_filepath").item(0).getTextContent();
-				recipe = new Recipe(recipeName, recipeImage, recipeDesc);
+				String recipeAuthor = element.getElementsByTagName("author").item(0).getTextContent();
+				String recipeDifficulty = element.getElementsByTagName("difficulty").item(0).getTextContent();
+				recipe = new Recipe(recipeName, recipeDesc, recipeDifficulty, recipeAuthor, recipeImage);
+				NodeList recipeIngredients = element.getElementsByTagName("ingredient");
+				for(int i = 0; i < recipeIngredients.getLength(); i++) {
+					recipe.addIngredient(recipeIngredients.item(i).getTextContent());
+				}
 				NodeList recipeSteps = element.getElementsByTagName("step");
 				for(int i = 0; i < recipeSteps.getLength(); i++) {
-					recipe.addRecipeStep(i + 1, recipeSteps.item(i).getTextContent());
+					recipe.addStep(i + 1, recipeSteps.item(i).getTextContent());
 				}
 				this.recipeList.add(recipe);
 			} catch (ParserConfigurationException e) {
