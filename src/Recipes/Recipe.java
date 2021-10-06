@@ -56,13 +56,17 @@ public class Recipe {
 	}
 	
 	public String toString() {
-		String output = ("\nName:\n" + this.recipeName + "\n");
-		output += ("Description:\n" + this.recipeDescription + "\n");
-		output += ("Recipe Image:\n" + this.recipeImageURI + "\n");
-		for(int i = 0; i < this.steps.size(); i++) {
-			output += ("Step " + (i + 1) + "\n");
-			output += (this.steps.get(i+1) + "\n");
+		String output = "¯`·.¸¸.·´¯`·.¸¸.·´¯`·.¸¸.·´¯`·.¸¸\n\n";
+		output += String.format("Name: %s | Author: %s | Difficulty: %s", this.recipeName, this.recipeAuthor, this.recipeDifficulty);
+		output += ("\n\n" + this.recipeDescription + "\n\nYou will need the following ingredients:\n");
+		for(String ingredient:this.ingredients) {
+			output += ingredient + "\n";
 		}
+		output += "\n";
+		for(int i = 0; i < this.steps.size(); i++) {
+			output += ("Step " + (i + 1) + ":" + this.steps.get(i+1) + "\n");
+		}
+		output += output = "\n¯`·.¸¸.·´¯`·.¸¸.·´¯`·.¸¸.·´¯`·.¸¸\n";
 		return output;
 	}
 	
