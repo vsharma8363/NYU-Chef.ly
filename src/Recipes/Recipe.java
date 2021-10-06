@@ -36,6 +36,15 @@ public class Recipe {
 		return this.steps;
 	}
 	
+	public void printAll() {
+		System.out.println("\nName:\n" + this.recipeName);
+		System.out.println("Description:\n" + this.recipeDescription);
+		System.out.println("Recipe Image:\n" + this.recipeImageURI);
+		for(int i = 0; i < this.steps.size(); i++) {
+			System.out.println("Step " + (i + 1));
+			System.out.println(this.steps.get(i+1));
+		}
+	}
 	
 
 }
