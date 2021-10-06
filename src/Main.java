@@ -12,23 +12,21 @@ public class Main {
 		while(true) { // Start permanent loop
 			System.out.println("What would you like to do? (0 - Search a recipe, 1 - View all recipes, 2 - Add a recipe, 3 - Exit)");
 			int choice = scan.nextInt();
-			// Waiting for getRecipeBySearch to be implemented before testing
-			if (choice == 0) {/*
+			if (choice == 0) {
 				System.out.println("Please enter the name of the recipe");
 				String recipename = scan.nextLine();
+				recipename = scan.nextLine();
 				ArrayList<Recipe> results = new ArrayList<Recipe>();
-				results = getRecipeBySearch(recipename);
+				results = recipeManager.getRecipeBySearch(recipename);
 				for (int i = 0; i < results.size(); i++) {
 					System.out.println("Recipe: " + i);
 					Recipe recipe = results.get(i);
-					recipe.printAll();
-					}
-				
+					System.out.println(recipe.getName() + ", by " + recipe.getAuthor() + "\n");
+				}
 				System.out.println("Please enter the number of the recipe you would like");
 				int recipChoice = scan.nextInt();
-				System.out.println("Here is your recipe");
-				results.get(recipChoice).printAll();
-			*/	
+				System.out.println("Here is your recipe...");
+				System.out.println(results.get(recipChoice).toString());
 			}
 			else if (choice == 1) {
 				ArrayList<Recipe> recipes = recipeManager.getRecipeList();
