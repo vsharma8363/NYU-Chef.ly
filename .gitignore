@@ -1,3 +1,4 @@
 /bin/
 .metadata/
 *.class
+.DS_store
