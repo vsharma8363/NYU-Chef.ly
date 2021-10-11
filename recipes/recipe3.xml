@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<recipe>
+	<name>Strawberry Cheesecake Cupcake</name>
+    <author>https://www.delish.com/cooking/recipe-ideas/a19712943/strawberry-cheesecake-stuffed-cupcakes-recipe/</author>
+    <description>A dense and rich to smooth and creamy dessert with tart, sweet, and tangy flavor and fresh strawberry notes.</description>
+    <difficulty>easy</difficulty>
+    <image_filepath>images/cheesecake.png</image_filepath>
+    <ingredients>
+        <ingredient>1 boxed vanilla cake mix plus ingredients called for on box</ingredient>
+        <ingredient>2 blocks (8 ounce) cream cheese</ingredient>
+        <ingredient>1/2 cup powdered sugar</ingredient>
+        <ingredient>1 teaspoon vanilla extract</ingredient>
+        <ingredient>3 cups cool whip</ingredient>
+        <ingredient>1 cup chopped strawberries</ingredient>
+        <ingredient>1/2 cup crushed graham crackers</ingredient>
+        <ingredient>strawberry slices for garnish</ingredient>
+     </ingredients>
+
+	<steps>
+        <step>Preheat the oven to 350 and line two muffin tins with cupcake liners. Prepare vanilla cake batter according to package instructions and divide between cupcake liners. Bake according to package instructions. Let cool completely.</step>
+
+		<step>Make filling: In a large bowl, using a hand mixer, beat together cream cheese, powdered sugar, and vanilla. Fold in 1 cup of cool whip and strawberries.</step>
+
+		<step>Using a teaspoon or melon baller, scoop out the middle of each cupcake to create a small well. Fill each cupcake with cheesecake filling. </step>
+
+		<step>Pipe remaining cool whip on top and garnish with a strawberry slice and graham cracker crumbs. </step>
+	</steps>
+</recipe>

@@ -55,6 +55,21 @@ public class Recipe {
 		return this.ingredients;
 	}
 	
+	public String toString() {
+		String output = "¯`·.¸¸.·´¯`·.¸¸.·´¯`·.¸¸.·´¯`·.¸¸\n\n";
+		output += String.format("Name: %s | Author: %s | Difficulty: %s", this.recipeName, this.recipeAuthor, this.recipeDifficulty);
+		output += ("\n\n" + this.recipeDescription + "\n\nYou will need the following ingredients:\n");
+		for(String ingredient:this.ingredients) {
+			output += ingredient + "\n";
+		}
+		output += "\n";
+		for(int i = 0; i < this.steps.size(); i++) {
+			output += ("Step " + (i + 1) + ":" + this.steps.get(i+1) + "\n");
+		}
+		output += output = "\n¯`·.¸¸.·´¯`·.¸¸.·´¯`·.¸¸.·´¯`·.¸¸\n";
+		return output;
+	}
+	
 	public TreeMap<Integer, String> getSteps() {
 		return this.steps;
 	}

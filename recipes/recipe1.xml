@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<recipe>
+	<name>Shrimp Pasta Alla Vodka</name>
+    <author>https://www.simplyrecipes.com/recipes/shrimp_pasta_alla_vodka/</author>
+    <description>A velvety creamy tomato sauce cooked with a splash of vodka, which remarkably makes this simple sauce taste simply sublime.</description>
+    <difficulty>medium</difficulty>
+    <image_filepath>images/pasta.png</image_filepath>
+    <ingredients>
+        <ingredient>12 ounces fettucine pasta</ingredient>
+        <ingredient>salt</ingredient>
+        <ingredient>2 tablespoons butter</ingredient>
+        <ingredient>1.5 cups finely chopped onion</ingredient>
+        <ingredient>4 teaspoons minced garlic</ingredient>
+        <ingredient>1 can, 28-ounce red pepper flakes</ingredient>
+        <ingredient>12 ounces cannned crushed tomatoes</ingredient>
+        <ingredient>1/4 cup vodka </ingredient>
+        <ingredient>6 tablespoons heavy whipping cream</ingredient>
+        <ingredient>1 pound peeled, deveined raw shrimp</ingredient>
+        <ingredient>3 tablespoons chopped fresh parsely</ingredient>
+        <ingredient>freshly ground black pepper</ingredient>
+     </ingredients>
+
+	<steps>
+		<step>Put pasta water on to boil. Put a large pot of salted water (1 Tbsp salt for every 2 quarts of water) on to boil for the pasta.</step>
+
+		<step>Sauté onions, garlic, red pepper flakes. Melt butter in a large, thick-bottomed pot on medium high heat. Add the onion and sauté 5 to 7 minutes, until lightly browned</step>
+
+		<step>Add tomatoes, vodka, cream, zest. Add the crushed tomatoes to the onions. Stir in the vodka, cream, and lemon zest. Increase heat to bring to a simmer, then lower the heat to maintain a simmer.</step>
+
+		<step>Start cooking pasta. As soon as you start simmering the sauce, add pasta to boiling salted water. Pasta should be done in 10 minutes. </step>
+
+		<step>Add raw shrimp to sauce. After the sauce has simmered for 5 minutes, about halfway through the pasta cooking time, taste for salt and add salt to taste (you'll likely need about 1 teaspoon). Add the raw peeled and deveined shrimp to the sauce.</step>
+
+		<step>Add cooked pasta to sauce and shrimp. When the pasta is done, strain it and add it to the vodka tomato sauce and shrimp. </step>
+	</steps>
+
+</recipe>
