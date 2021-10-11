@@ -6,6 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.scene.Node;
+import javafx.scene.control.Button;
 
 public class SceneController {
 
@@ -33,6 +34,9 @@ public class SceneController {
     public void switchToCreateScene(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("CreateScene.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        // Button btn = new Button();
+        // btn.setText("Recipe 1");
+
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
@@ -46,6 +50,8 @@ public class SceneController {
         stage.show();
     }
 
-
+    public void hello(ActionEvent event) throws IOException {
+        System.out.println("hello");
+    }
     
 }
