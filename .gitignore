@@ -2,3 +2,5 @@
 .metadata/
 *.class
 .DS_store
+.classpath
+launch.json
