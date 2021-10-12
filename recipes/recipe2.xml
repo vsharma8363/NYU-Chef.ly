@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<recipe>
+	<name>Lo Mein</name>
+    <author>https://damndelicious.net/2014/10/03/easy-lo-mein/</author>
+    <description>A chinese dish with egg noodles containing sliced vegetables stir-fried in a seasoned sauce.</description>
+    <difficulty>easy</difficulty>
+    <image_filepath>images/lo_mein.png</image_filepath>
+    <ingredients>
+        <ingredient>8 ounces lo mein egg noodles</ingredient>
+        <ingredient>1 tablespoon olive oil</ingredient>
+        <ingredient>2 cups minced garlic cloves</ingredient>
+        <ingredient>2 cups sliced cremini mushrooms</ingredient>
+        <ingredient>1 red pepper, julienned</ingredient>
+        <ingredient>1 carrot</ingredient>
+        <ingredient>1/2 cup snow peas</ingredient>
+        <ingredient>3 cups baby spinach</ingredient>
+        <SauceIngredients>
+            <sauceIngredient>2 tablespoons reduced sodium soy sauce, or more, to taste</sauceIngredient>
+            <sauceIngredient>2 teaspoons sugar</sauceIngredient>
+            <sauceIngredient>1 teaspoon sesame oil</sauceIngredient>
+            <sauceIngredient>½ teaspoon ground ginger</sauceIngredient>
+            <sauceIngredient>½ teaspoon Sriracha, or more, to taste</sauceIngredient>
+        </SauceIngredients>
+     </ingredients>
+	
+	<steps>
+		<step>In a small bowl, whisk together soy sauce, sugar, sesame oil, ginger and Sriracha; set aside.</step>
+
+		<step>In a large pot of boiling water, cook noodles according to package instructions; drain well.</step>
+
+		<step>Heat olive oil in a large skillet over medium high heat. Add garlic, mushrooms, bell pepper, and carrot. Cook, stirring frequently, until tender, about 3-4 minutes. Stir in snow peas and spinach until the spinach has wilted, about 2-3 minutes.</step>
+
+		<step>Stir in egg noodles and soy sauce mixture, and gently toss to combine.</step>
+	</steps>
+
+</recipe>
+
+	
+	

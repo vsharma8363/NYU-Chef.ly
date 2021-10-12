@@ -109,12 +109,19 @@ public class RecipeManager {
 	}
 	
 	public ArrayList<Recipe> getRecipeBySearch(String query) {
+		String processed_query = this.processString(query);
 		ArrayList<Recipe> output = new ArrayList<Recipe>();
 		for(Recipe recipe:this.recipeList) {
-			// TODO: Implement some comparison here
-			// compare query and recipe.getRecipeName(); --> add to output
+			String processed_recipe_data = this.processString(recipe.getName() + recipe.getDescription());
+			if(processed_recipe_data.contains(processed_query)) {
+				output.add(recipe);
+			}
 		}
 		return output;
+	}
+	
+	private String processString(String input) {
+		return input.replaceAll("[^a-zA-Z0-9]", "").replaceAll(" ", "").toLowerCase();
 	}
 	
 	private void refreshRecipeList() {
