@@ -1,3 +1,4 @@
+package Applet;
 //JavaFX Imports
 import javafx.application.Application;
 import javafx.scene.Scene;
