@@ -10,8 +10,6 @@ import javafx.scene.Parent;
 import java.util.TreeMap;
 import Recipes.Recipe;
 import Recipes.RecipeManager;
-import java.util.Scanner;
-import java.util.ArrayList;
 
 public class AppletMain extends Application{
     //GUI start method
