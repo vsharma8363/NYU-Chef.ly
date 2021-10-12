@@ -6,8 +6,9 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="829.0" prefWidth="1295.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SceneController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="829.0" prefWidth="1295.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Applet.SceneController">
    <children>
+      <!-- header -->
       <Pane layoutY="-2.0" prefHeight="70.0" prefWidth="1296.0" style="-fx-background-color: #FFFFFF;">
          <children>
             <Label layoutX="577.0" layoutY="-1.0" prefHeight="70.0" prefWidth="147.0" text="CHEF.LY" textAlignment="CENTER">
@@ -17,7 +18,10 @@
             </Label>
          </children>
       </Pane>
+
       <Pane layoutY="760.0" prefHeight="70.0" prefWidth="1296.0" style="-fx-background-color: #FFFFFF;" />
+
+      <!-- Side panel -->
       <Pane layoutY="68.0" prefHeight="692.0" prefWidth="377.0" style="-fx-background-color: #E7DBDB;">
          <children>
             <Button fx:id="browseButton" layoutX="92.0" layoutY="104.0" mnemonicParsing="false" onAction="#switchToBrowseScene" prefHeight="104.0" prefWidth="210.0" text="BROWSE">
@@ -37,9 +41,12 @@
             </Button>
          </children>
       </Pane>
+
+      <!-- Create view -->
       <Pane layoutX="377.0" layoutY="68.0" prefHeight="691.0" prefWidth="921.0" style="-fx-background-color: #715C5C;">
          <children>
-            <Label layoutX="324.0" layoutY="296.0" prefHeight="108.0" prefWidth="216.0" text="Placeholder: Discover Page" textAlignment="CENTER" />
+            <Label layoutX="324.0" layoutY="296.0" prefHeight="108.0" prefWidth="216.0" text="Placeholder: Create Page" textAlignment="CENTER" />
+            <Label text="Recipe 1" layoutX="160" layoutY="350" prefHeight="108.0" prefWidth="216.0"/>
          </children>
       </Pane>
    </children>
