@@ -1,11 +1,3 @@
-//JavaFX Imports
-import javafx.application.Application;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-
-
 import java.util.TreeMap;
 import Recipes.Recipe;
 import Recipes.RecipeManager;
