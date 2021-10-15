@@ -43,6 +43,7 @@ public class SceneController implements Initializable {
         Parent root = FXMLLoader.load(getClass().getResource("BrowseScene.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
+        scene.getStylesheets().addAll(this.getClass().getResource("application.css").toExternalForm());
         stage.setScene(scene);
         stage.show();
     }
@@ -52,6 +53,7 @@ public class SceneController implements Initializable {
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
         scene = new Scene(root);
+        scene.getStylesheets().addAll(this.getClass().getResource("application.css").toExternalForm());
         stage.setScene(scene);
         stage.show();
         // difficultyChoiceBox.getItems().addAll(difficultyChoices);
@@ -61,6 +63,7 @@ public class SceneController implements Initializable {
         Parent root = FXMLLoader.load(getClass().getResource("DiscoverScene.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
+        scene.getStylesheets().addAll(this.getClass().getResource("application.css").toExternalForm());
         stage.setScene(scene);
         stage.show();
     }
