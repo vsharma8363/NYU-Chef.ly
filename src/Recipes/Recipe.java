@@ -23,12 +23,26 @@ public class Recipe {
 		this.steps = new TreeMap<Integer, String>();
 	}
 
+	public Recipe(String recipeName, String recipeDesc, String recipeDifficulty, String recipeAuthor) {
+		this.recipeName = recipeName;
+		this.recipeImageURI = "recipes/images/default.png";
+		this.recipeDescription = recipeDesc;
+		this.recipeDifficulty = recipeDifficulty;
+		this.recipeAuthor = recipeAuthor;
+		this.ingredients = new ArrayList<String>();
+		this.steps = new TreeMap<Integer, String>();
+	}
+
 	public void addStep(int stepNumber, String step) {
 		this.steps.put(stepNumber, step);
 	}
 	
 	public void addIngredient(String ingredient) {
 		this.ingredients.add(ingredient);
+	}
+
+	public void setImageURI(String imageURI) {
+		this.recipeImageURI = imageURI;
 	}
 	
 	public String getName() {
