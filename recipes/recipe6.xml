@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<recipe>
+	<name>Chicken Tikka Karahi</name>
+    <author>https://ticklethosetastebuds.com/chicken-tikka-karahi-pakistani-style-murgh-tikka-kadai/</author>
+    <description>Chicken Tikka is another popular dish from South-Asian region, where Tikka means pieces or small chunks. So, Chicken Tikka is small chicken pieces marinated in spices and yogurt, which are then char-grilled giving it a nice smokey flavor.</description>
+    <difficulty>medium</difficulty>
+    <image_filepath>recipes/images/chicken_karahi.png</image_filepath>
+    <ingredients>
+        <ingredient>500 grams Chicken</ingredient>
+        <ingredient>1 Tbsp Chargha Masala</ingredient>
+        <ingredient>1/2 tsp Chaat Masala</ingredient>
+        <ingredient>1 tsp Dried Fenurgreek Leaves</ingredient>
+        <ingredient>1/2 tsp Turmeric</ingredient>
+        <ingredient>1 tsp Red Chili powder</ingredient>
+        <ingredient>1/2 tsp Black pepper crushed</ingredient>
+        <ingredient>1 Tbsp White Vinegar</ingredient>
+        <ingredient>1/4 tsp Orange food color</ingredient>
+        <ingredient>3 Tbsp Natural Yogurt</ingredient>
+        <ingredient>1 Tbsp Ghee or Oil</ingredient>
+        <ingredient>2 Tbsp Ghee or Oil</ingredient>
+        <ingredient>1 Tbsp Butter</ingredient>
+        <ingredient>1/2 Tbsp Ginger Paste</ingredient>
+        <ingredient>1/2 Tbsp Garlic Paste</ingredient>
+        <ingredient>3 Tomatoes</ingredient>
+        <ingredient>1 tsp Salt</ingredient>
+        <ingredient>1 1/2 tsp Red Chili powder</ingredient>
+        <ingredient>1/2 tsp Turmeric</ingredient>
+        <ingredient>1/2 Tbsp Coriander Seeds</ingredient>
+        <ingredient>1/2 Tbsp Cumin Seeds</ingredient>
+        <ingredient>1/2 Tbsp Red Chili Flakes</ingredient>
+        <ingredient>2-3 Green chilies</ingredient>
+        <ingredient>1 inch Ginger</ingredient>
+        <ingredient>Chopped Coriander</ingredient>
+        <ingredient>Green Chilies chopped</ingredient>
+        <ingredient>lemon juice</ingredient>
+     </ingredients>
+	
+		<steps>
+            <ChickenTikka>
+                <step>In a bowl whisk together all the marinade ingredients. Add the chicken and coat well with the marinade. Cover the bowl and allow to marinate for 30 minutes or overnight in the fridge</step>
+			    <step>Heat ghee or oil in a grill pan or non-stick pan over high heat and place the chicken pieces on it. Don’t over crowd, keep the left over marinade. Cook for 5-6 minutes on each side or until the chicken is charred about 5-6 minutes each side. Take out and keep in a bowl until further use</step>
+            </ChickenTikka>
+
+            <PreparingKarahi>
+                <step>In the karahi heat ghee/oil and butter over medium-high heat, when it melts add ginger and garlic paste. </step>
+			    <step>Stir frequently not to burn the ginger and garlic, when fragrant and lightly golden add chopped tomatoes along with the salt, red chili powder and turmeric. Mix and add 1/2 cup water</step>
+			    <step>When the tomatoes are soft reduce the heat to medium and add in the remaining chicken tikka marinade, mix well. Add coarsely ground cumin, coriander and red chili flakes. Give it a mix </step>
+			    <step>Now add the prepared Chicken Tikka along with green chilies and ginger, mix it all and cover the pan for 5 minutes. Let cook on medium heat </step>
+			    <step>After 5 minutes, do a taste check and adjust seasoning. </step>
+            </PreparingKarahi>
+
+            <Garnish>
+                <step>Garnish with fresh coriander, green chilies and ginger with a squeeze of lemon juice </step>
+			    <step>Serve with Tandoori Roti or Naan </step>
+            </Garnish>
+		</steps>
+
+</recipe>
+
+	
+	
