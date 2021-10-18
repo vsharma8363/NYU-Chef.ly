@@ -39,7 +39,7 @@
       </Pane>
       <Pane fx:id="viewPane" layoutX="377.0" layoutY="68.0" prefHeight="691.0" prefWidth="921.0" style="-fx-background-color: #715C5C;">
          <children>
-            <Label fx:id="placeHolder" layoutX="324.0" layoutY="296.0" prefHeight="108.0" prefWidth="216.0" text="Home Page" textAlignment="CENTER" />
+            <Label fx:id="placeHolder" layoutX="324.0" layoutY="296.0" prefHeight="108.0" prefWidth="216.0" text="Welcome to Chef.ly!" textAlignment="CENTER" />
          </children>
       </Pane>
    </children>

@@ -1,7 +1,6 @@
 package Applet;
 
 import java.io.IOException;
-import java.io.File;
 import java.net.URL;
 import java.util.ResourceBundle;
 import java.util.ArrayList;
@@ -11,17 +10,14 @@ import Recipes.RecipeManager;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.scene.text.TextAlignment;
 
 import javafx.fxml.Initializable;
 import javafx.stage.FileChooser;
 import javafx.geometry.Insets;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
+import javafx.geometry.Pos;
 import javafx.stage.Stage;
 import javafx.scene.Node;
-import javafx.scene.control.ChoiceBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
@@ -172,10 +168,27 @@ public class SceneController implements Initializable {
 
     private void displayRecipe(Recipe recipe) {
         viewPane.getChildren().clear();
-        Label recipeData = new Label(recipe.toString());
+        VBox recipeBox = new VBox(10);
+        recipeBox.setAlignment(Pos.CENTER_LEFT);
+        Label recipeData = new Label("\n" + recipe.toString() + "\n");
         recipeData.setFont(new Font(15.0));
-        recipeData.setTextAlignment(TextAlignment.CENTER);
-        viewPane.getChildren().add(recipeData);
+        recipeData.setTextAlignment(TextAlignment.LEFT);
+        try {
+            FileInputStream input = new FileInputStream(recipe.getImageURI());
+            Image image = new Image(input);
+            ImageView imageView = new ImageView(image);
+            imageView.setFitWidth(512.0);
+            imageView.setFitHeight(512.0);
+            recipeBox.getChildren().add(imageView);
+        }
+        catch(FileNotFoundException e) {}
+        ScrollPane scrollPane = new ScrollPane();
+        scrollPane.setPrefWidth(viewPane.getWidth());
+        scrollPane.setPrefHeight(viewPane.getHeight());
+        recipeBox.getChildren().add(recipeData);
+        scrollPane.setContent(recipeBox);
+        scrollPane.setPadding(new Insets(20,20,20,20));
+        viewPane.getChildren().add(scrollPane);
     }
 
 }

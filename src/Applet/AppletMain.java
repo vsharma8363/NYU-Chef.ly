@@ -2,16 +2,10 @@ package Applet;
 //JavaFX Imports
 import javafx.application.Application;
 import javafx.scene.Scene;
-import javafx.scene.control.CheckBox;
 import javafx.stage.Stage;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.control.ChoiceBox;
-
-
-import java.util.TreeMap;
-import Recipes.Recipe;
-import Recipes.RecipeManager;
 
 public class AppletMain extends Application{
     //GUI start method

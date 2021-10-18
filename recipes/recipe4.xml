@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<recipe>
+	<name>One Pot Beef and Broccoli</name>
+    <author>https://damndelicious.net/2014/08/13/easy-beef-broccoli/</author>
+    <description>Pot Beef and Broccoli, a delicious dish.</description>
+    <difficulty>easy</difficulty>
+    <image_filepath>recipes/images/one_pot.png</image_filepath>
+    <ingredients>
+        <ingredient>2/3 cup reduced sodium soy sauce</ingredient>
+        <ingredient>1/2 cup chicken stock</ingredient>
+        <ingredient>1/4 cup honey</ingredient>
+        <ingredient>2 tablespoons rice wine vinegar</ingredient>
+        <ingredient>2 tablespoons brown sugar</ingredient>
+        <ingredient>3 cloves minced garlic</ingredient>
+        <ingredient>1 tablespoon sesame oil</ingredient>
+        <ingredient>1 tablespoon corn starch</ingredient>
+        <ingredient>1 teaspoon Sriracha</ingredient>
+        <ingredient>1 teaspoon ground ginger</ingredient>
+        <ingredient>1/4 teaspoon red pepper flakes</ingredient>
+        <ingredient>1 tablespoon olive oil</ingredient>
+        <ingredient>1 pound flank steak, thinly sliced across the grain</ingredient>
+        <ingredient>1 head broccoli, cut into florets</ingredient>        
+     </ingredients>
+	
+		<steps>
+			<step>In a medium bowl, whisk together soy sauce, chicken stock, honey, vinegar, brown sugar, garlic, sesame oil, cornstarch, Sriracha, ginger, red pepper flakes and 1/4 cup water; set aside.</step>
+
+			<step>Heat olive oil in a large skillet over medium high heat. Add steak and cook, flipping once, until browned, about 3-4 minutes.</step>
+
+			<step>Stir in broccoli and soy sauce mixture until tender and slightly thickened, about 3-4 minutes.</step>
+
+			<step>Serve immediately.</step>
+		</steps>
+
+</recipe>
+
+	
+	
