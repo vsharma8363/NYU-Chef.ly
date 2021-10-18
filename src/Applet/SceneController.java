@@ -57,10 +57,19 @@ public class SceneController implements Initializable {
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         viewPane.getChildren().clear();
         VBox vbox = new VBox(10.0);
-        TextField recipeName = new TextField("What is the recipe name?");
-        TextField recipeAuthor = new TextField("Who is the author of this recipe?");
-        TextField recipeDesc = new TextField("Describe your recipe here");
-        TextField recipeDifficulty = new TextField("How difficult is your recipe? (Hard, Medium, Easy)");
+
+        TextField recipeName = new TextField("");
+        recipeName.setPromptText("What is the recipe name?");
+
+        TextField recipeAuthor = new TextField("");
+        recipeAuthor.setPromptText("Who is the author of this recipe?");
+
+        TextField recipeDesc = new TextField("");
+        recipeDesc.setPromptText("Describe your recipe here");
+
+        TextField recipeDifficulty = new TextField("");
+        recipeDifficulty.setPromptText("How difficult is your recipe? (Easy, Medium, Hard)");
+
         HBox imageBox = new HBox(10.0);
         FileChooser fileChooser = new FileChooser();
         Button selectImageButton = new Button("Select Recipe Image");
