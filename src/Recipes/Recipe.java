@@ -56,23 +56,17 @@ public class Recipe {
 	}
 	
 	public String toString() {
-		int max_line_len = 80;
-		String output = String.format("Name: %s\nAuthor: %s\nDifficulty: %s\n\n", this.recipeName, this.recipeAuthor, this.recipeDifficulty);
-		output += (this.recipeDescription + "\n\nYou will need the following ingredients:\n");
+		String output = "¯`·.¸¸.·´¯`·.¸¸.·´¯`·.¸¸.·´¯`·.¸¸\n\n";
+		output += String.format("Name: %s | Author: %s | Difficulty: %s", this.recipeName, this.recipeAuthor, this.recipeDifficulty);
+		output += ("\n\n" + this.recipeDescription + "\n\nYou will need the following ingredients:\n");
 		for(String ingredient:this.ingredients) {
 			output += ingredient + "\n";
 		}
 		output += "\n";
 		for(int i = 0; i < this.steps.size(); i++) {
-			output += ("Step " + (i + 1) + ": ");
-			for(int w = 0; w < this.steps.get(i+1).length(); w++) {
-				if(w % max_line_len == 0) {
-					output += "\n";
-				}
-				output += this.steps.get(i+1).charAt(w);
-			}
-			output += ("\n");
+			output += ("Step " + (i + 1) + ":" + this.steps.get(i+1) + "\n");
 		}
+		output += output = "\n¯`·.¸¸.·´¯`·.¸¸.·´¯`·.¸¸.·´¯`·.¸¸\n";
 		return output;
 	}
 	

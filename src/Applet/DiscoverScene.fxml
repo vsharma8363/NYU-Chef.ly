@@ -39,7 +39,7 @@
       </Pane>
       <Pane layoutX="377.0" layoutY="68.0" prefHeight="691.0" prefWidth="921.0" style="-fx-background-color: #715C5C;">
          <children>
-            <Label layoutX="324.0" layoutY="296.0" prefHeight="108.0" prefWidth="216.0" text="Placeholder: Home Page" textAlignment="CENTER" />
+            <Label layoutX="324.0" layoutY="296.0" prefHeight="108.0" prefWidth="216.0" text="Placeholder: Discover Page" textAlignment="CENTER" />
          </children>
       </Pane>
    </children>

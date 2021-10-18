@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
@@ -39,7 +42,22 @@
       </Pane>
       <Pane layoutX="377.0" layoutY="68.0" prefHeight="691.0" prefWidth="921.0" style="-fx-background-color: #715C5C;">
          <children>
-            <Label layoutX="324.0" layoutY="296.0" prefHeight="108.0" prefWidth="216.0" text="Placeholder: Home Page" textAlignment="CENTER" />
+            <TextField layoutX="170.0" layoutY="74.0" prefHeight="43.0" prefWidth="591.0" promptText="TITLE" style="-fx-background-color: none;" styleClass="textField" stylesheets="@application.css">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField layoutX="173.0" layoutY="148.0" prefHeight="31.0" prefWidth="242.0" promptText="Author" style="-fx-background-color: none;" styleClass="textField" stylesheets="@application.css">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <ChoiceBox id="difficultyChoiceBox" fx:id="difficultyChoiceBox" layoutX="530.0" layoutY="148.0" prefHeight="30.0" prefWidth="242.0" style="-fx-background-color: none; -fx-border-color: white;" styleClass="textField" stylesheets="@application.css" />
+            <TextArea id="descriptionBox" layoutX="177.0" layoutY="212.0" prefHeight="124.0" prefWidth="601.0" promptText="Description" style="-fx-background-color: none; -fx-text-fill: white;" />
+            <Button layoutX="807.0" layoutY="42.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="67.0" style="-fx-background-color: white;" text="SAVE" />
+            <TextField layoutX="178.0" layoutY="371.0" prefHeight="59.0" prefWidth="602.0" promptText="Step 1" />
+            <TextField layoutX="177.0" layoutY="463.0" prefHeight="59.0" prefWidth="602.0" promptText="Step 2" />
+            <TextField layoutX="178.0" layoutY="555.0" prefHeight="59.0" prefWidth="602.0" promptText="Step 3" />
          </children>
       </Pane>
    </children>
