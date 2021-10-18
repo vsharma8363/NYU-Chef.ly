@@ -4,7 +4,7 @@
     <author>https://www.delish.com/cooking/recipe-ideas/a19712943/strawberry-cheesecake-stuffed-cupcakes-recipe/</author>
     <description>A dense and rich to smooth and creamy dessert with tart, sweet, and tangy flavor and fresh strawberry notes.</description>
     <difficulty>easy</difficulty>
-    <image_filepath>recipes/images/cheesecake.png</image_filepath>
+    <image_filepath>images/cheesecake.png</image_filepath>
     <ingredients>
         <ingredient>1 boxed vanilla cake mix plus ingredients called for on box</ingredient>
         <ingredient>2 blocks (8 ounce) cream cheese</ingredient>

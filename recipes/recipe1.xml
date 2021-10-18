@@ -4,7 +4,7 @@
     <author>https://www.simplyrecipes.com/recipes/shrimp_pasta_alla_vodka/</author>
     <description>A velvety creamy tomato sauce cooked with a splash of vodka, which remarkably makes this simple sauce taste simply sublime.</description>
     <difficulty>medium</difficulty>
-    <image_filepath>recipes/images/pasta.png</image_filepath>
+    <image_filepath>images/pasta.png</image_filepath>
     <ingredients>
         <ingredient>12 ounces fettucine pasta</ingredient>
         <ingredient>salt</ingredient>

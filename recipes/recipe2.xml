@@ -4,7 +4,7 @@
     <author>https://damndelicious.net/2014/10/03/easy-lo-mein/</author>
     <description>A chinese dish with egg noodles containing sliced vegetables stir-fried in a seasoned sauce.</description>
     <difficulty>easy</difficulty>
-    <image_filepath>recipes/images/lo_mein.png</image_filepath>
+    <image_filepath>images/lo_mein.png</image_filepath>
     <ingredients>
         <ingredient>8 ounces lo mein egg noodles</ingredient>
         <ingredient>1 tablespoon olive oil</ingredient>
