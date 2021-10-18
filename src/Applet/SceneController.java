@@ -31,6 +31,7 @@ import javafx.scene.text.Font;
 import javafx.scene.control.Button;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import javafx.geometry.Pos;
 
 
 public class SceneController implements Initializable {
@@ -55,13 +56,14 @@ public class SceneController implements Initializable {
         VBox vbox = new VBox(10.0);
 
         TextField recipeName = new TextField("");
-        recipeName.setPromptText("What is the recipe name?");
-        // System.out.println(recipeName.getStyleClass());
-        recipeName.setLayoutX(400);
-        // rect.setLayoutY(50);
+        recipeName.setPromptText("Recipe Name");
+        recipeName.getStyleClass().add("title");
+        recipeName.setAlignment(Pos.CENTER);
 
         TextField recipeAuthor = new TextField("");
-        recipeAuthor.setPromptText("Who is the author of this recipe?");
+        recipeAuthor.setPromptText("Author of the Recipe");
+        recipeAuthor.getStyleClass().add("title");
+        recipeAuthor.setAlignment(Pos.CENTER);
 
         TextField recipeDesc = new TextField("");
         recipeDesc.setPromptText("Describe your recipe here");
@@ -80,21 +82,25 @@ public class SceneController implements Initializable {
         imageBox.getChildren().addAll(selectImageButton, imageLabel);
 
         VBox ingredientsBox = new VBox(10.0);
+        ingredientsBox.setPadding(new Insets(20, 0, 10, 0));
         ArrayList<TextField> ingredientFields = new ArrayList<TextField>();
         Button ingredients = new Button("Add Ingredient");
         ingredientsBox.getChildren().add(ingredients);
         ingredients.setOnAction(e -> {
-            TextField ingredientsField = new TextField("Add an ingredient here.");
+            TextField ingredientsField = new TextField("");
+            ingredientsField.setPromptText("Add an ingredient here.");
             ingredientsBox.getChildren().add(ingredientsField);
             ingredientFields.add(ingredientsField);
         });
 
         VBox stepsBox = new VBox(10.0);
+        stepsBox.setPadding(new Insets(20, 0, 10, 0));
         ArrayList<TextField> stepFields = new ArrayList<TextField>();
         Button steps = new Button("Add Step");
         stepsBox.getChildren().add(steps);
         steps.setOnAction(e -> {
-            TextField stepsField = new TextField("Add step #" + (stepFields.size() + 1) + " here.");
+            TextField stepsField = new TextField("");
+            stepsField.setPromptText("Add step #" + (stepFields.size() + 1) + " here.");
             stepsBox.getChildren().add(stepsField);
             stepFields.add(stepsField);
         });
@@ -115,6 +121,9 @@ public class SceneController implements Initializable {
             viewPane.getChildren().clear();
         });
 
+        vbox.setPadding(new Insets(80, 100, 20, 100));
+        vbox.setPrefWidth(800);
+        vbox.setAlignment(Pos.CENTER);;
         vbox.getChildren().addAll(recipeName, recipeAuthor, recipeDesc, recipeDifficulty, imageBox, ingredientsBox, stepsBox, doneButton);
         viewPane.getChildren().add(vbox);
     }
