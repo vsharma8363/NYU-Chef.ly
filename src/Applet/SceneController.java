@@ -60,6 +60,9 @@ public class SceneController implements Initializable {
 
         TextField recipeName = new TextField("");
         recipeName.setPromptText("What is the recipe name?");
+        // System.out.println(recipeName.getStyleClass());
+        recipeName.setLayoutX(400);
+        // rect.setLayoutY(50);
 
         TextField recipeAuthor = new TextField("");
         recipeAuthor.setPromptText("Who is the author of this recipe?");

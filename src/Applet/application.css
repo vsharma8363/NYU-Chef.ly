@@ -10,12 +10,13 @@
     -fx-font-size: 14px; 
 }
 
-.textField {
-    -fx-background-color: 
+.text-field {
+    /* -fx-background-color: 
         rgba(0,0,0,0),
         linear-gradient(#9a9a9a, #909090),
-        linear-gradient(white 0%, #f3f3f3 50%, #f3f3f3 51%, #f2f2f2 100%);
-    -fx-text-fill: white;
+        linear-gradient(white 0%, #f3f3f3 50%, #f3f3f3 51%, #f2f2f2 100%); */
+    -fx-text-fill: black;
+    width: 400px;
 }
 /*
 .button:hover{

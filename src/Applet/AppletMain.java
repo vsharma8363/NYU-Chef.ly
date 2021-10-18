@@ -19,9 +19,9 @@ public class AppletMain extends Application{
     public void start(Stage primaryStage){
         try{
             Parent root = FXMLLoader.load(getClass().getResource("HomeScene.fxml"));
-            ChoiceBox<String> difficultyChoiceBox = new ChoiceBox<String>();
-            String[] difficultyChoices = { "easy", "medium", "hard" };
-            difficultyChoiceBox.getItems().addAll(difficultyChoices);
+            // ChoiceBox<String> difficultyChoiceBox = new ChoiceBox<String>();
+            // String[] difficultyChoices = { "easy", "medium", "hard" };
+            // difficultyChoiceBox.getItems().addAll(difficultyChoices);
 
             Scene scene = new Scene(root);
             primaryStage.setResizable(false);
