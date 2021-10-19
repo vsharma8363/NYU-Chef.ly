@@ -19,7 +19,14 @@
 }
 
 .title {
+    -fx-font-size: 20px;
+    -fx-font: Helvetica;
+    -fx-background-color: none;
+    -fx-text-fill: white;
+}
+.author {
     -fx-font-size: 16px;
+    -fx-font: Helvetica;
     -fx-background-color: none;
     -fx-text-fill: white;
 }

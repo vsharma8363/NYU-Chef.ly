@@ -28,6 +28,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.control.Label;
 import javafx.scene.text.Font;
+import javafx.scene.text.FontWeight;
 import javafx.scene.control.Button;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -58,12 +59,12 @@ public class SceneController implements Initializable {
         TextField recipeName = new TextField("");
         recipeName.setPromptText("Recipe Name");
         recipeName.getStyleClass().add("title");
-        recipeName.setAlignment(Pos.CENTER);
+        recipeName.setAlignment(Pos.CENTER_LEFT);
 
         TextField recipeAuthor = new TextField("");
-        recipeAuthor.setPromptText("Author of the Recipe");
-        recipeAuthor.getStyleClass().add("title");
-        recipeAuthor.setAlignment(Pos.CENTER);
+        recipeAuthor.setPromptText("Author");
+        recipeAuthor.getStyleClass().add("author");
+        recipeAuthor.setAlignment(Pos.CENTER_LEFT);
 
         TextField recipeDesc = new TextField("");
         recipeDesc.setPromptText("Describe your recipe here");
