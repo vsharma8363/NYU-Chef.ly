@@ -1,10 +1,10 @@
-import java.util.TreeMap;
 import Recipes.Recipe;
 import Recipes.RecipeManager;
 import java.util.Scanner;
 import java.util.ArrayList;
 
-public class Main {
+public class Main{
+	
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Welcome to chef.ly!");
@@ -92,6 +92,7 @@ public class Main {
 			}
 			
 		}
+
 	}
 	
 
