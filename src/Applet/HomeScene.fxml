@@ -30,7 +30,7 @@
                   <Font name="Helvetica" size="19.0" />
                </font>
             </Button>
-            <Button layoutX="95.0" layoutY="489.0" mnemonicParsing="false" onAction="#switchToDiscoverScene" prefHeight="104.0" prefWidth="210.0" text="DISCOVER">
+            <Button layoutX="95.0" layoutY="489.0" mnemonicParsing="false" onAction="#switchToDiscoverScene" prefHeight="104.0" prefWidth="210.0" text="SEARCH">
                <font>
                   <Font name="Helvetica" size="19.0" />
                </font>

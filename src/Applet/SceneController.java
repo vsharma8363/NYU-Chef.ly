@@ -107,6 +107,7 @@ public class SceneController implements Initializable {
         viewPane.getChildren().add(vbox);
     }
 
+    // Renamed to "Search" within GUI (Changes relflected in homescene.fxml)
     public void switchToDiscoverScene(ActionEvent event) throws IOException {
         viewPane.getChildren().clear();
         HBox hbox = new HBox(10.0);
@@ -129,9 +130,9 @@ public class SceneController implements Initializable {
     private void dislayRecipeButtons(ArrayList<Recipe> recipes) {
         viewPane.getChildren().clear();
         GridPane gridPane = new GridPane();
-        gridPane.setPadding(new Insets(20,20,20,20));
-        gridPane.setHgap(20); //horizontal gap in pixels => that's what you are asking for
-        gridPane.setVgap(20);
+        gridPane.setPadding(new Insets(135,20,20,40));
+        gridPane.setHgap(40); //horizontal gap in pixels => that's what you are asking for
+        gridPane.setVgap(40);
         int x = 0;
         int y = 0;
         for(Recipe recipe:recipes) {
@@ -169,7 +170,7 @@ public class SceneController implements Initializable {
     private void displayRecipe(Recipe recipe) {
         viewPane.getChildren().clear();
         VBox recipeBox = new VBox(10);
-        recipeBox.setAlignment(Pos.CENTER_LEFT);
+        recipeBox.setAlignment(Pos.CENTER_LEFT); //CENTER_LEFT OG
         Label recipeData = new Label("\n" + recipe.toString() + "\n");
         recipeData.setFont(new Font(15.0));
         recipeData.setTextAlignment(TextAlignment.LEFT);
