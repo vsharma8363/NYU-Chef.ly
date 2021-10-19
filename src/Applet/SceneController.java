@@ -132,10 +132,14 @@ public class SceneController implements Initializable {
     public void switchToDiscoverScene(ActionEvent event) throws IOException {
         viewPane.getChildren().clear();
         HBox hbox = new HBox(10.0);
-        TextField searchBox = new TextField("Search for recipe by name.");
+        hbox.setPadding(new Insets(20, 20, 20, 300));
+        TextField searchBox = new TextField("");
+        searchBox.setPromptText("Search for recipe by name.");
+        searchBox.getStyleClass().add("search_bar");
         Button searchButton = new Button("SEARCH");
         hbox.getChildren().addAll(searchBox, searchButton);
         viewPane.getChildren().addAll(hbox);
+        
         searchButton.setOnAction(e->{
             if(recipeManager.getRecipeBySearch(searchBox.getText()).size() <= 0) {
                 searchBox.setStyle("-fx-text-fill: red;");
@@ -152,7 +156,7 @@ public class SceneController implements Initializable {
         viewPane.getChildren().clear();
         GridPane gridPane = new GridPane();
         gridPane.setPadding(new Insets(135,20,20,40));
-        gridPane.setHgap(40); //horizontal gap in pixels => that's what you are asking for
+        gridPane.setHgap(40); 
         gridPane.setVgap(40);
         int x = 0;
         int y = 0;
