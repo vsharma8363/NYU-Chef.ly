@@ -2,3 +2,4 @@
 .metadata/
 .vscode/launch.json
 src/.DS_Store
+.vscode/settings.json
